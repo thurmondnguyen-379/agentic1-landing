@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic1 — Where the agentic generation begins.</title>
+  <meta name="description" content="One person. Agentic reach. Company-scale motion." />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; font-family: 'Inter', sans-serif; }
+    body { display: flex; min-height: 100vh; background: #f5f0e8; }
+    .left { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 56px 64px; position: relative; background-color: #f5f0e8; }
+    .right { width: 32%; min-height: 100vh; position: relative; overflow: hidden; background: #111; flex-shrink: 0; }
+    .right::after { content: ''; position: absolute; bottom: -60px; right: -60px; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(circle, #e8713a 0%, #c44a10 40%, transparent 70%); opacity: 0.85; }
+    .logo { font-size: clamp(52px, 7vw, 80px); font-weight: 900; letter-spacing: -2px; line-height: 1; color: #111; user-select: none; }
+    .logo span { color: #e05c1a; }
+    .content { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 48px 0 32px; }
+    .tagline { font-size: clamp(26px, 3.5vw, 42px); font-weight: 800; line-height: 1.2; color: #111; margin-bottom: 20px; }
+    .tagline em { color: #e05c1a; font-style: normal; }
+    .sub { font-size: clamp(14px, 1.5vw, 17px); font-weight: 700; color: #111; line-height: 1.6; margin-bottom: 48px; }
+    .cta { display: inline-block; border: 2.5px solid #111; border-radius: 50px; padding: 14px 40px; font-size: 13px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #111; text-decoration: none; cursor: default; width: fit-content; transition: background 0.2s, color 0.2s; }
+    .cta:hover { background: #111; color: #f5f0e8; }
+    .footer { display: flex; align-items: center; gap: 10px; }
+    .mail-icon { width: 22px; height: 22px; color: #e05c1a; flex-shrink: 0; }
+    .footer a { font-size: 15px; font-weight: 500; color: #111; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+    @media (max-width: 680px) { body { flex-direction: column; } .right { width: 100%; min-height: 220px; order: -1; } .left { padding: 40px 32px; } }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <div class="logo">Agentic<span>1</span></div>
+    <div class="content">
+      <h1 class="tagline">Where the <em>agentic</em><br>generation <em>begins.</em></h1>
+      <p class="sub">One person. Agentic reach.<br>Company-scale motion.</p>
+      <a class="cta" href="#">Coming Soon</a>
+    </div>
+    <div class="footer">
+      <svg class="mail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <polyline points="2,4 12,13 22,4"/>
+      </svg>
+      <a href="mailto:hi@agentic1.vn">hi@agentic1.vn</a>
+    </div>
+  </div>
+  <div class="right"></div>
+</body>
+</html>
