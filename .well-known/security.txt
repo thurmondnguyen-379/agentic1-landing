@@ -1,0 +1,4 @@
+Contact: mailto:hi@agentic1.vn
+Expires: 2027-07-16T00:00:00.000Z
+Preferred-Languages: vi, en
+Canonical: https://agentic1.vn/.well-known/security.txt
